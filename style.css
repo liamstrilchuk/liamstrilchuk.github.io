@@ -1,0 +1,143 @@
+body {
+	background: rgb(25, 25, 35);
+	color: white;
+	font-family: Ubuntu, sans-serif;
+}
+
+* {
+	transition: 0.2s;
+}
+
+.content {
+	margin: auto;
+	width: 65%;
+	min-width: 600px;
+	padding: 0 15px;
+}
+
+h1 {
+	margin: 40px 0 10px 0px;
+	border-bottom: 2px solid #aab;
+	padding-bottom: 5px;
+}
+
+h2 {
+	border-bottom: 1px solid #778;
+	padding-bottom: 5px;
+	margin-top: 50px;
+}
+
+ul {
+	line-height: 1.4em;
+}
+
+.desc {
+	font-size: 1.1em;
+}
+
+.work {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.frosted {
+	backdrop-filter: blur(10px);
+	max-width: calc(100% - 30px);
+	width: 350px;
+	margin: 0 10px 10px 0;
+	background-color: rgb(45, 45, 65);
+	border: 3px solid rgb(55, 55, 75);
+	border-radius: 7px;
+	background: linear-gradient(rgb(45, 45, 65), rgb(45, 45, 65)), 
+		linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+	background-clip: content-box, border-box;
+	background-origin: border-box;
+}
+
+.frosted:hover {
+	box-shadow: rgba(10, 10, 20, 0.55) 0px 5px 15px;
+	border: 3px solid transparent;
+	animation: Animation 1s ease infinite;
+}
+
+.frosted > div {
+	padding: 15px;
+}
+
+.frosted-title {
+	font-size: 1.1em;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+.frosted-desc {
+	padding-bottom: 10px;
+	line-height: 1.35em;
+}
+
+.frosted-tools {
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 10px;
+}
+
+.frosted-tools > div {
+	width: max-content;
+	background: rgb(65, 65, 85);
+	padding: 5px 10px;
+	margin-right: 5px;
+	border-radius: 5px;
+	user-select: none;
+	margin-top: 5px;
+}
+
+.frosted-tools > div:hover {
+	background: rgb(75, 75, 95);
+}
+
+.frosted-links a {
+	color: #ddd !important;
+	margin-right: 10px;
+}
+
+.frosted-links a:hover {
+	color: white !important;
+}
+
+.edu-section {
+	margin-bottom: 15px;
+}
+
+.edu-title {
+	display: block;
+	font-weight: bold;
+	font-size: 1.1em;
+	margin-bottom: 5px;
+}
+
+.edu-dates {
+	color: #dde;
+}
+
+.skills b {
+	font-size: 1.1em;
+	display: block;
+	margin-bottom: 5px;
+}
+
+.social-link {
+	color: white !important;
+	text-decoration: none;
+	margin-right: 15px;
+	font-size: 1.1em;
+}
+
+@media screen and (max-width: 1000px) {
+	.content {
+		width: 90%;
+		min-width: unset;
+	}
+}
