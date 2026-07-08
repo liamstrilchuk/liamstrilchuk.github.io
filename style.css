@@ -97,12 +97,28 @@ ul {
 
 .frosted-tools>div {
 	width: max-content;
-	background: rgb(65, 65, 85);
-	padding: 5px 10px;
+	border: 2px solid #aaa;
+	padding: 3px 8px;
 	margin-right: 5px;
 	border-radius: 5px;
 	user-select: none;
 	margin-top: 5px;
+	font-size: 0.9em;
+}
+
+.languages div, .languages:not(.frosted-tools) {
+	border: 2px solid rgb(216, 126, 90);
+	color: rgb(255, 222, 209);
+}
+
+.technologies div, .technologies:not(.frosted-tools) {
+	border: 2px solid rgb(90, 216, 147);
+	color: rgb(209, 255, 232);
+}
+
+.tools div, .tools:not(.frosted-tools) {
+	border: 2px solid rgb(155, 90, 216);
+	color: rgb(246, 209, 255);
 }
 
 .frosted-tools>div:hover {
@@ -118,8 +134,41 @@ ul {
 	color: white !important;
 }
 
-.edu-section {
+.edu-section, .experience-section {
 	margin-bottom: 15px;
+}
+
+.experience-item {
+	margin-bottom: 15px;
+	display: flex;
+	align-items: center;
+}
+
+.experience-item img {
+	width: 75px;
+	height: 75px;
+	border: 3px solid rgba(255, 255, 255, 0.7);
+	border-radius: 5px;
+	user-select: none;
+}
+
+.experience-item div {
+	margin-left: 15px;
+}
+
+.experience-item div span {
+	display: block;
+	margin-bottom: 2px;
+}
+
+.experience-company {
+	font-weight: bold;
+	color: white;
+}
+
+.experience-dates {
+	color: #aaa;
+	font-size: 0.9em;
 }
 
 .edu-title {
